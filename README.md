@@ -19,11 +19,17 @@ The data for both models is derived from the Universal Dependencies NER datasets
 Requirments for the models:
 
 -Python 3.7+
+
 -Jupyter Notebook
+
 -Pytorch
+
 -Transformers
+
 -scikit-learn
+
 -pandas
+
 -numpy
 
 Files:
