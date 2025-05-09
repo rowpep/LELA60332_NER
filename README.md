@@ -1,5 +1,5 @@
-# LELA60332_NER
-#Named Entity Recognition (NER) with Transformer Models
+ LELA60332_NER
+Named Entity Recognition (NER) with Transformer Models
 
 This repository contains code for a NER projectusing transformer based models.
 
@@ -16,23 +16,17 @@ There are two tagsets:
 
 The data for both models is derived from the Universal Dependencies NER datasets: en_ewt and en_pud. 
 
-#Requirments for the models:
+Requirments for the models:
 
 -Python 3.7+
-
 -Jupyter Notebook
-
 -Pytorch
-
-=Transformers
-
+-Transformers
 -scikit-learn
-
 -pandas
-
 -numpy
 
-#Files:
+Files:
 
 Encover_NER_3_7labels.ipynb
 
@@ -42,6 +36,11 @@ Seq2Seq_NER_3_7labels.ipynb
 
 USes a T5 sequence to sequence model. Inputs areprefixed with "ner" for task specification. Outputs are decoded sequences of tags. Evaluates with macroF1 scores and labelled and unlabelled span accuray. Also works with 3 or7 labels. 
 
-#Running the notebooks
+Running the notebooks
 
-Each notebook is self contained. The data will download automatically. Seq2Seq model will run for 3 epochs and Encoder will run for 30 epochs. The model is then evaluated on validation and test sets. Access to a GPU is preferred otherwise device type will need to be changed to cpu. Random seeds are fixed for shuffling. 
+Each notebook is self contained. The data will download automatically. Seq2Seq model will run for 3 epochs and Encoder will run for 30 epochs. The model is then evaluated on validation and test sets. Access to a GPU is preferred otherwise device type will need to be changed to cpu. 
+
+
+Reproducibility
+
+Random seeds are fixed to ensure conssitent shuffling.
